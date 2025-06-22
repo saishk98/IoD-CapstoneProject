@@ -1,0 +1,96 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-container {
+  background: #32CD32;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.category-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-button {
+  background: orange;
+  color: white;
+  padding: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Highlight the selected category */
+.category-button.selected {
+  background-color: orangered;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.proceed-button {
+  background: lime;
+  color: black;
+  padding: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Disable Proceed button until a category is selected */
+.proceed-button:disabled {
+  background: grey;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.input-field {
+  width: 100%; /* Makes it as wide as the container */
+  height: 40px; /* Adjust height to match button size */
+  font-size: 16px; /* Ensure readable text */
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: left; /* Aligns titles to the left */
+  margin-left: 10px; /* Adds slight spacing for better positioning */
+}

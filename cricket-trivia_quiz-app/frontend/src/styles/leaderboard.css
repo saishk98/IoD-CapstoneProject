@@ -1,0 +1,127 @@
+/* Page Background */
+body {
+  background-color: lightsteelblue !important;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Wrapper */
+.leaderboard-container {
+  background-color: lightskyblue;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+/* Leaderboard Table */
+.leaderboard-table {
+  width: 100%;
+  table-layout: fixed;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: lightblue;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Header Row Styling */
+.leaderboard-table thead tr {
+  background-color: #b71c1c;
+}
+
+.leaderboard-table thead th {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #880e0e;
+  text-align: left;
+}
+
+/* Equal Column Widths */
+.rank-cell,
+.name-cell,
+.category-cell,
+.score-cell {
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px;
+}
+
+/* Name Column Left Aligned for Clarity */
+.name-cell {
+  text-align: left;
+  padding-left: 16px;
+}
+
+/* Top Rank Highlight (future use) */
+.top-rank {
+  font-weight: bold;
+  background-color: #ffeb3b;
+}
+
+/* Score Table Summary */
+.player-score-table {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.highlight-score {
+  font-weight: bold;
+  color: #008000;
+  background-color: #f0f8ff;
+  border-top: 2px solid #007bff;
+  padding: 10px;
+}
+
+/* Return Button Styling */
+.return-home-button {
+  background-color: darkgreen !important;
+  color: whitesmoke !important;
+  font-weight: 500;
+  padding: 10px 24px;
+  margin-top: 24px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 24px auto 0;
+  text-align: center;
+}
+
+.return-home-button:hover {
+  background-color: chartreuse !important;
+  color: darkred !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Simple Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.zoom-in {
+  transform: scale(0.95);
+  animation: zoomIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+  }
+}

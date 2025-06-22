@@ -1,0 +1,27 @@
+.score-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.score-card {
+  padding: 30px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.zoom-in {
+  transform: scale(0.8);
+  animation: zoomIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  to { transform: scale(1); }
+}

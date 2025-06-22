@@ -1,0 +1,70 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@600&display=swap');
+
+/* Main container refinements */
+.home-container {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: cyan;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title refinements */
+.home-title {
+  font-size: 4.5rem !important;
+  font-weight: 900;
+  font-family: "Bebas Neue", sans-serif !important;
+  color: navy;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Logo refinements */
+.CricketLogo {
+  width: 350px;
+  display: block;
+}
+
+/* Description refinements */
+.home-description {
+  font-size: 2.0rem !important;
+  max-width: 650px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Bebas Neue", sans-serif !important;
+  color: orangered;
+  padding: 10px 20px;
+}
+
+/* Button container refinements */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* Button styling refinements */
+.start-button, .leaderboard-button {
+  width: 280px;
+  padding: 18px;
+  font-size: 1.8rem;
+  font-family: "Orbitron", sans-serif !important;
+  text-transform: uppercase;
+  border-radius: 12px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: darkorange !important;
+  color: white !important;
+}
+
+.start-button:hover, .leaderboard-button:hover {
+  background-color: orangered !important;
+  transform: scale(1.05);
+}

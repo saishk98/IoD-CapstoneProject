@@ -1,0 +1,22 @@
+.category-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideIn 0.8s forwards;
+}
+
+.bounce:hover {
+  animation: bounce 0.3s infinite alternate;
+}
+
+@keyframes slideIn {
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+  to { transform: scale(1.05); }
+}
