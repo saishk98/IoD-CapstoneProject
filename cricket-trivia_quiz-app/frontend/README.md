@@ -1,12 +1,60 @@
-# React + Vite
+# 🏏 Cricket Trivia Quiz - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React.js interface for the Cricket Trivia Quiz App, offering users a fast-paced and engaging quiz experience across categories like History, Rules, Players, Records, and Miscellaneous.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+### Home ('/')
+- Welcome screen with animated headings.
+- Options to **Start Quiz** or **View Leaderboard**.
+- Name input and category selector via modal popup.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Quiz Interface ('/quiz')
+- Dynamically fetches 20 questions from selected category.
+- Timed questions with a countdown display using a mockable 'Timer'.
+- Option selection highlights user's choice.
+- Submit button disabled until all questions are answered.
+
+### Score Summary ('/score')
+- Final score display with percentage and time taken.
+- Answer review: each question with user vs correct answer.
+- Navigation button to go back or view leaderboard.
+
+### Leaderboard ('/leaderboard')
+- Displays Top 10 users sorted by average score.
+- Includes category count per user.
+- Shared-rank logic for tied scores (e.g., Rank 1 🥇 for multiple users).
+
+---
+
+## Tech Stack
+
+| Layer        | Tech                                    |
+|--------------|-----------------------------------------|
+| Framework    | React.js                                |
+| UI Libraries | Material UI, Bootstrap                  |
+| Routing      | React Router                            |
+| API Calls    | Axios                                   |
+| Testing      | Vitest, React Testing Library           |
+| Styling      | CSS Modules + Custom Stylesheets        |
+
+---
+
+## Getting Started
+cd cricket-trivia_quiz-app
+cd frontend
+npm install
+npm run dev 
+
+The app runs at http://localhost:5173
+
+## Run Tests
+npm test
+
+Mocked tests cover:
+- Timer behaviour
+- Quiz submission logic
+- Button interactivity and routing
+- Components isolation via Vitest + jsdom
