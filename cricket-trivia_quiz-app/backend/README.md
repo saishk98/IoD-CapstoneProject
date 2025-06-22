@@ -55,7 +55,7 @@ Express.js backend powering the Cricket Quiz frontend. It manages quiz questions
 | Field       | Type        | Description                        |
 |-------------|-------------|------------------------------------|
 | id          | INT         | Primary key                        |
-| user_id     | INT (FK)    | Linked to `users.user_id`          |
+| user_id     | INT (FK)    | Linked to 'users.user_id'          |
 | category    | VARCHAR     | Category quiz belongs to           |
 | score       | INT         | Score out of 100                   |
 | timestamp   | DATETIME    | Submission time                    |
